@@ -18,6 +18,8 @@ router.post("/password/reset", controller.resetPassword);
 
 router.get("/detail", authMiddleware.requireAuth, controller.detail);
 
+router.get("/list", authMiddleware.requireAuth, controller.list);
+
 
 
 
