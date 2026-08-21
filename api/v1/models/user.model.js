@@ -10,10 +10,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         default: "active",
     },
-    token: {
-        type: String,
-        default: () => generateHelper.generateRandomString(32)
-    },
+    token: String,
     phone: String,
     deleted: {
         type: Boolean,

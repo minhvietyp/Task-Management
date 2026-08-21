@@ -26,7 +26,7 @@ module.exports.register = async (req, res) => {
             fullName: req.body.fullName,
             email: req.body.email,
             password: req.body.password,
-            // role: "user"
+            token: generateHelper.generateRandomString(32),
         });
         await user.save();
 
